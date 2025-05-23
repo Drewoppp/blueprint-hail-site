@@ -32,8 +32,10 @@ header {
   font-size: 36px;
   font-weight: bold;
   margin-top: 10px;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 3px #000;
-  /* keep your custom colors or gradient already applied */
 }
 
 .logo-subtext {
