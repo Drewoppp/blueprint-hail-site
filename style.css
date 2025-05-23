@@ -104,13 +104,13 @@ nav ul li a {
 /* Hero section */
 .hero {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 
 .hero-video {
@@ -121,6 +121,7 @@ nav ul li a {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
