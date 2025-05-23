@@ -572,9 +572,7 @@ footer {
 }
 /* Trusted By Section */
 .trusted-section {
-  padding: 8px 10px; /* 🔻 Dramatically thinner top/bottom */
-  background-color: #f0f0f0;
-  text-align: center;
+  padding: 10px 0;
 }
 
 .trusted-section h2 {
@@ -594,19 +592,20 @@ footer {
   display: flex;
   gap: 80px;
   animation: scrollLeft 90s linear infinite;
-  padding: 4px 0;           /* ✅ Add vertical breathing room */
+  align-items: center;     /* ✅ Vertically center logos */
+  height: 40px;            /* 👈 Taller than logo height to prevent crop */
 }
 
 .carousel img {
-  height: 32px;              /* ⬇ Slightly smaller */
+  height: 35px;              /* Set desired visual height */
   width: auto;
   flex-shrink: 0;
-  filter: grayscale(100%);
-  opacity: 0.8;
-  transition: transform 0.10s ease;
-  display: block;            /* ✅ Removes inline whitespace gap */
-  object-fit: contain;       /* ✅ Ensures it doesn't overflow */
+  display: block;
+  object-fit: contain;       /* ✅ Ensures full logo fits in bounds */
+  padding: 0 0 2px;          /* ✅ Slight bottom buffer to avoid clipping */
+  background: transparent;   /* Ensure background isn’t hiding anything */
 }
+
 
 
 .carousel img:hover {
