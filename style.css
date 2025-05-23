@@ -29,22 +29,21 @@ header {
 }
 
 .logo-text {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: bold;
-  color: yellow;
   margin-top: 10px;
-  z-index: 2;
+  text-shadow: 1px 1px 3px #000;
+  /* keep your custom colors or gradient already applied */
 }
 
 .logo-subtext {
-  font-size: 40px;
-  color: yellow;
-  margin-top: 5px;
-  font-weight: 600;
-  text-shadow: 1px 1px 3px #000;
-  text-transform: uppercase;   /* ✅ Makes all letters uppercase */
-  letter-spacing: 1px;         /* ✅ Adds spacing between letters */
+  font-size: 24px;
+  color: yellow; /* ✅ make it yellow */
+  margin-top: 4px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #000;
 }
+
 .logo-image {
   height: auto;
   max-height: 250px; /* Controls vertical size */
