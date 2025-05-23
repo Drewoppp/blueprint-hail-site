@@ -721,7 +721,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .gallery-slide {
-    height: 300px;
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-video {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    padding: 20px;
   }
 }
