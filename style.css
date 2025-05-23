@@ -592,8 +592,9 @@ footer {
 
 .carousel-track {
   display: flex;
-  gap: 80px;  /* 🔻 Tighter spacing between logos */
+  gap: 80px;
   animation: scrollLeft 90s linear infinite;
+  padding: 4px 0;           /* ✅ Add vertical breathing room */
 }
 
 .carousel img {
