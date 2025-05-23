@@ -38,10 +38,13 @@ header {
 
 .logo-subtext {
   font-size: 24px;
-  color: yellow; /* ✅ make it yellow */
+  color: yellow !important; /* ⬅ forces the yellow color */
   margin-top: 4px;
   font-weight: 500;
   text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
 }
 
 .logo-image {
