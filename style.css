@@ -597,13 +597,16 @@ footer {
 }
 
 .carousel img {
-  height: 35px;         /* 🔻 Smaller logos */
+  height: 32px;              /* ⬇ Slightly smaller */
   width: auto;
   flex-shrink: 0;
   filter: grayscale(100%);
   opacity: 0.8;
   transition: transform 0.10s ease;
+  display: block;            /* ✅ Removes inline whitespace gap */
+  object-fit: contain;       /* ✅ Ensures it doesn't overflow */
 }
+
 
 .carousel img:hover {
   transform: scale(1.05);
