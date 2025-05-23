@@ -599,13 +599,14 @@ footer {
 }
 
 .carousel img {
-  height: 35px;              /* Set desired visual height */
+  height: 35px;
   width: auto;
   flex-shrink: 0;
+  filter: grayscale(100%) brightness(1);
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+  object-fit: contain;
   display: block;
-  object-fit: contain;       /* ✅ Ensures full logo fits in bounds */
-  padding: 0 0 2px;          /* ✅ Slight bottom buffer to avoid clipping */
-  background: transparent;   /* Ensure background isn’t hiding anything */
 }
 
 
