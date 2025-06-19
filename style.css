@@ -588,22 +588,47 @@ footer {
 /* trust section */
 .trust-section {
   background-color: #f8f8f8;
-  padding: 50px 20px;
-  text-align: left;
-  font-family: Arial, sans-serif;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.trust-content {
-  max-width: 800px;
+.trust-grid {
+  max-width: 1000px;
   margin: 0 auto;
-  font-size: 16px;
-  color: #333;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.trust-content p {
-  margin-bottom: 20px;
+.trust-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: left;
+}
+
+.trust-card p {
+  margin-bottom: 10px;
+  font-size: 15px;
   line-height: 1.6;
 }
+
+.trust-card p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .full-width {
+    grid-column: span 1;
+  }
+}
+
 
 
 /* Slide-in animation */
