@@ -410,5 +410,32 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  const grid = document.getElementById('trustCarousel');
+  const dots = document.getElementById('trustDots');
+
+  const cards = Array.from(grid.children);
+  cards.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dots.appendChild(dot);
+  });
+
+  const updateDots = () => {
+    const scrollLeft = grid.scrollLeft;
+    const cardWidth = grid.offsetWidth * 0.85; // match CSS flex-basis
+    const index = Math.round(scrollLeft / (cardWidth + 20)); // + gap
+    document.querySelectorAll('.trust-dots .dot').forEach((d, i) =>
+      d.classList.toggle('active', i === index)
+    );
+  };
+
+  grid.addEventListener('scroll', () => {
+    clearTimeout(grid._scrollTimer);
+    grid._scrollTimer = setTimeout(updateDots, 100);
+  });
+</script>
+
 </body>
 </html>
