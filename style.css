@@ -586,6 +586,12 @@ footer {
 }
 
 /* trust section */
+.trust-section {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
 .trust-grid {
   max-width: 1000px;
   margin: 0 auto;
@@ -609,12 +615,15 @@ footer {
 
 /* 👇 This ensures stacking behavior on mobile */
 @media (max-width: 768px) {
-  .trust-grid {
-    grid-template-columns: 1fr;
+  .trust-section .trust-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .full-width {
-    grid-column: span 1;
+  .trust-card,
+  .trust-card.full-width {
+    width: 100%;
   }
 }
 
