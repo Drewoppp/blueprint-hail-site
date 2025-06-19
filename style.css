@@ -863,21 +863,46 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .trust-scroll-wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+
   .trust-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     gap: 20px;
     padding: 10px;
   }
 
   .trust-card {
-    flex: 0 0 85%; /* Show one card mostly full width */
+    flex: 0 0 85%;
     scroll-snap-align: start;
     min-width: 85%;
   }
 
   .full-width {
     flex: 0 0 85%;
+  }
+
+  .trust-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .trust-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+
+  .trust-dots .dot.active {
+    background: #003366;
   }
 }
