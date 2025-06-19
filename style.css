@@ -497,10 +497,8 @@ footer {
   transform: translateY(-5px);
 }
 
-.elfsight-badge {
-  z-index: -1 !important;
-  opacity: 0;
-  pointer-events: none;
+.elfsight-app [class*="eapps-widget-badge"] {
+  display: none !important;
 }
 
 /* Comparison Chart */
