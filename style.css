@@ -585,52 +585,6 @@ footer {
   gap: 15px;
 }
 
-/* trust section */
-.trust-section {
-  background-color: #f8f8f8;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.trust-grid {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr; /* 👈 Forces stacking always */
-}
-
-.trust-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  text-align: left;
-}
-
-/* 👇 This ensures full-width cards stretch across on large screens */
-.full-width {
-  grid-column: span 2;
-}
-
-/* 👇 This ensures stacking behavior on mobile */
-@media (max-width: 768px) {
-  .trust-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .trust-card.full-width {
-    grid-column: span 1 !important;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .trust-card {
-    font-size: 15px;
-  }
-}
-
 /* Slide-in animation */
 .step-card.show {
   opacity: 1;
@@ -862,47 +816,4 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .trust-scroll-wrapper {
-    overflow-x: hidden;
-    position: relative;
-  }
 
-  .trust-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .trust-card {
-    flex: 0 0 85%;
-    scroll-snap-align: start;
-    min-width: 85%;
-  }
-
-  .full-width {
-    flex: 0 0 85%;
-  }
-
-  .trust-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 8px;
-  }
-
-  .trust-dots .dot {
-    width: 10px;
-    height: 10px;
-    background: #bbb;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-  }
-
-  .trust-dots .dot.active {
-    background: #003366;
-  }
-}
