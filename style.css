@@ -627,6 +627,12 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .trust-card {
+    font-size: 15px;
+  }
+}
+
 /* Slide-in animation */
 .step-card.show {
   opacity: 1;
