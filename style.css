@@ -861,3 +861,23 @@ footer {
     max-width: 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .trust-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .trust-card {
+    flex: 0 0 85%; /* Show one card mostly full width */
+    scroll-snap-align: start;
+    min-width: 85%;
+  }
+
+  .full-width {
+    flex: 0 0 85%;
+  }
+}
