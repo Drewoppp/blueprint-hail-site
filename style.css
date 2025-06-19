@@ -586,12 +586,6 @@ footer {
 }
 
 /* trust section */
-.trust-section {
-  background-color: #f8f8f8;
-  padding: 60px 20px;
-  text-align: center;
-}
-
 .trust-grid {
   max-width: 1000px;
   margin: 0 auto;
@@ -608,28 +602,21 @@ footer {
   text-align: left;
 }
 
-.trust-card p {
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.trust-card p:first-child {
-  font-weight: bold;
-  font-size: 16px;
-}
-
+/* 👇 This ensures full-width cards stretch across on large screens */
 .full-width {
   grid-column: span 2;
 }
 
+/* 👇 This ensures stacking behavior on mobile */
 @media (max-width: 768px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
   .full-width {
     grid-column: span 1;
   }
 }
-
-
 
 /* Slide-in animation */
 .step-card.show {
