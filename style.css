@@ -615,17 +615,15 @@ footer {
 
 /* 👇 This ensures stacking behavior on mobile */
 @media (max-width: 768px) {
-  .trust-section .trust-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .trust-grid {
+    grid-template-columns: 1fr !important;
   }
 
-  .trust-card,
   .trust-card.full-width {
-    width: 100%;
+    grid-column: span 1 !important;
   }
 }
+
 
 @media (max-width: 480px) {
   .trust-card {
