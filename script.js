@@ -89,3 +89,15 @@ function prevSlide() {
 // Show the first slide initially
 showSlide(currentSlide);
 
+// Add this inside script.js or before </body>
+const stepCards = document.querySelectorAll('.step-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.3 });
+
+stepCards.forEach(card => observer.observe(card));
