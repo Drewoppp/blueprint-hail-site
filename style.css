@@ -732,7 +732,18 @@ footer {
   color: #003366;
   margin-bottom: 10px;
 }
+/*booking contact */
+.booking-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
 
+.booking-section h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 30px;
+}
 
 
 
