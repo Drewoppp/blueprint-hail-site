@@ -409,5 +409,19 @@
   });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const stepCards = document.querySelectorAll('.step-card');
+
+    const reveal = () => {
+      stepCards.forEach(card => {
+        card.classList.add('show');
+      });
+    };
+
+    reveal(); // Show immediately — adjust to scroll trigger if needed
+  });
+</script>
+  
 </body>
 </html>
