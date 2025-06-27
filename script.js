@@ -43,26 +43,28 @@ document.querySelectorAll('.slide-in').forEach(el => {
 });
 
 // Accordion functionality
-document.querySelectorAll('.accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const accordionBody = header.nextElementSibling;
-    const icon = header.querySelector('.icon');
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const accordionBody = header.nextElementSibling;
+      const icon = header.querySelector('.icon');
 
-    const isActive = header.classList.contains('active');
+      const isActive = header.classList.contains('active');
 
-    // Close all items
-    document.querySelectorAll('.accordion-header').forEach(h => {
-      h.classList.remove('active');
-      h.nextElementSibling.style.maxHeight = null;
-      h.querySelector('.icon').textContent = '+';
+      // Close all items
+      document.querySelectorAll('.accordion-header').forEach(h => {
+        h.classList.remove('active');
+        h.nextElementSibling.style.maxHeight = null;
+        h.querySelector('.icon').textContent = '+';
+      });
+
+      // If it wasn't already active, open it
+      if (!isActive) {
+        header.classList.add('active');
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
     });
-
-    // If it wasn't already active, open it
-    if (!isActive) {
-      header.classList.add('active');
-      accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
-      icon.textContent = '−';
-    }
   });
 });
 
