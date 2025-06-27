@@ -243,6 +243,7 @@ nav ul li a {
   transition: max-height 0.3s ease;
   background: #fff;
   padding: 0 20px;
+  will-change: max-height; /* ✅ Helps with performance */
 }
 
 .accordion-body p {
