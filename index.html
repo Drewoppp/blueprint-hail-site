@@ -431,6 +431,25 @@
     reveal(); // Show immediately — adjust to scroll trigger if needed
   });
 </script>
-  
+
+<script>
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const body = header.nextElementSibling;
+      const isOpen = body.style.display === 'block';
+
+      // Close all
+      document.querySelectorAll('.accordion-body').forEach(b => b.style.display = 'none');
+      document.querySelectorAll('.accordion-header .icon').forEach(icon => icon.textContent = '+');
+
+      // Toggle current
+      if (!isOpen) {
+        body.style.display = 'block';
+        header.querySelector('.icon').textContent = '−';
+      }
+    });
+  });
+</script>
+    
 </body>
 </html>
