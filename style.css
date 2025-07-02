@@ -166,7 +166,7 @@ nav ul li a {
 
 .service-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 30px;
 }
