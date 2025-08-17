@@ -4,47 +4,100 @@
   <meta charset="UTF-8">
   <title>FAQ - Blue Print Hail Team</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header glass">
-  <a class="brand" href="https://blueprinthailteam.com" aria-label="Blue Print Hail Team home">
-    <img src="images/wfulllogo2.png" alt="BPHT Logo" class="logo-image">
-  </a>
+  <!-- ✅ Header -->
+  <header class="site-header">
+    <a class="brand" href="https://blueprinthailteam.com" aria-label="Blue Print Hail Team home">
+      <img src="images/wfulllogo2.png" alt="BPHT Logo" class="logo-image">
+    </a>
 
-  <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-  <nav class="nav" aria-label="Main">
-    <ul class="nav-list">
-      <li class="nav-item has-dropdown">
-        <a href="#about" class="nav-link">ABOUT US</a>
-        <div class="dropdown glass">
-          <a href="#blog" class="dropdown-link">FAQ</a>
-          <a href="#who-we-are" class="dropdown-link">SERVICES</a>
-          <a href="#staff" class="dropdown-link">CONTACT</a>
-        </div>
-      </li>
-      <li class="nav-item"><a href="#contact" class="nav-link">FAQ</a></li>
-      <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
-      <li class="nav-item"><a href="#contact2" class="nav-link">CONTACT</a></li>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item has-dropdown">
+          <a href="about.html" class="nav-link">ABOUT US</a>
+          <div class="dropdown">
+            <a href="faq.html" class="dropdown-link">FAQ</a>
+            <a href="services.html" class="dropdown-link">SERVICES</a>
+            <a href="contact.html" class="dropdown-link">CONTACT</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">SERVICES</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ✅ Page Content -->
-  <main class="page-content">
-    <h1>FAQ</h1>
-    <p>Welcome to Blue Print Hail Team! Here you can write about your company story, your values, and your mission statement.</p>
+  <main class="page-content faq-page">
+    <h1>Frequently Asked Questions</h1>
+
+    <section class="faq-item">
+      <h2>What is PDR?</h2>
+      <p>
+        PDR stands for <strong>Paintless Dent Repair</strong> — a specialized, non-invasive method of restoring a vehicle’s body to its original condition without the need for paint, fillers, or panel replacements. 
+        Using precision tools, skilled technicians carefully manipulate the metal from behind the panel, massaging the dent out until it seamlessly blends back into its factory shape.
+      </p>
+      <p>
+        Because PDR preserves your vehicle’s original paint finish, it offers multiple advantages over traditional body shop repairs.
+      </p>
+    </section>
+
+    <section class="faq-item">
+      <h2>What to Do if You Have Hail Damage?</h2>
+      <ol>
+        <li><strong>File a claim with your insurance</strong> – Let them know your vehicle was damaged in a hailstorm.</li>
+        <li><strong>Contact Blueprint Hail Team</strong> – Schedule a quick vehicle inspection and drop-off.</li>
+        <li><strong>We handle the rest</strong> – From working with your insurance to completing high-quality Paintless Dent Repairs, we take care of the entire process.</li>
+      </ol>
+    </section>
+
+    <section class="faq-item">
+      <h2>Does Blueprint Hail Team Work with Insurance?</h2>
+      <p>Yes — we work directly with all major insurance companies to make the repair process as smooth as possible for you.</p>
+    </section>
+
+    <section class="faq-item">
+      <h2>What Is the Turnaround Time?</h2>
+      <h3>Hail Damage Repairs</h3>
+      <p>Most hail damage repairs take about <strong>1–2 weeks</strong> from start to finish. Timing depends on how quickly your insurance company approves the claim and if any parts need to be ordered.</p>
+
+      <h3>Smaller Dents</h3>
+      <p>Repairs for smaller dents or door dings are typically completed in <strong>1–3 days</strong> once your vehicle is in the shop.</p>
+
+      <p>We don’t guarantee an exact completion date up front, but we stay in contact with you throughout the process so you always know the status of your vehicle. Our goal is to return your car in top condition without the stress.</p>
+    </section>
+
+    <section class="faq-item">
+      <h2>Will My Vehicle Lose Its Value?</h2>
+      <p>
+        When hail damage or dents are left unrepaired, your vehicle’s value can drop significantly — both in resale and trade-in offers.
+      </p>
+      <p>
+        However, with <strong>Paintless Dent Repair (PDR)</strong>, we restore your vehicle’s panels to their original factory shape without repainting or using fillers. This means:
+      </p>
+      <ul>
+        <li>Your factory finish is preserved, which is a key factor in maintaining value.</li>
+        <li>Repairs are virtually undetectable, so buyers and appraisers won’t see evidence of damage.</li>
+        <li>You avoid “accident” or “damage” flags that can show up when panels are replaced or painted.</li>
+      </ul>
+    </section>
   </main>
 
+  <!-- ✅ Footer -->
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-column">
         <h4>AREA OF SERVICE</h4>
-        <p>MURFREESBORO TN and Surrounding Areas</p>
+        <p>Murfreesboro TN and Surrounding Areas</p>
       </div>
 
       <div class="footer-column">
@@ -64,9 +117,7 @@
         <h4>SOCIAL</h4>
         <div class="social-icons">
           <a href="https://www.facebook.com/people/Blueprint-Hail-Team/100042714476335/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <!----<a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>-->
           <a href="https://www.instagram.com/blueprinthailteam/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <!----<a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>-->
           <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
         </div>
       </div>
@@ -77,11 +128,13 @@
     </div>
   
     <div class="footer-bottom">
-  <p>
-    &copy; Blue Print Hail Team | 2025 All Rights Reserved |
-    Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color: #fff; text-decoration: underline;">_chayavon</a>
-  </p>
-</div>
+      <p>
+        &copy; Blue Print Hail Team | 2025 All Rights Reserved |
+        Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color: #fff; text-decoration: underline;">_chayavon</a>
+      </p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
