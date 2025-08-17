@@ -63,9 +63,17 @@ header {
 }
 
 .brand .logo-image {
-  height: 40px;
+  max-height: 80px;   /* Bigger logo, adjust until you like it */
   width: auto;
   display: block;
+}
+
+/* Keep the header aligned vertically */
+.site-header {
+  display: flex;
+  align-items: center;   /* centers logo + nav vertically */
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem; /* reduce top/bottom padding so text and logo align */
 }
 
 .nav { display: block; }
