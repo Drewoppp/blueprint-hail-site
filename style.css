@@ -44,50 +44,6 @@ header {
   display: block;
 }
 
-/* FAQ Page Styles */
-.faq-page {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.faq-page h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.2rem;
-  color: #222;
-}
-
-.faq-item {
-  margin-bottom: 2rem;
-  padding: 1rem 1.2rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.faq-item h2 {
-  margin-bottom: .75rem;
-  color: #111;
-  font-size: 1.4rem;
-}
-
-.faq-item h3 {
-  margin-top: 1rem;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-.faq-item p, 
-.faq-item li {
-  line-height: 1.6;
-}
-
-.faq-item ul,
-.faq-item ol {
-  margin-left: 1.5rem;
-  margin-top: .5rem;
-}
 
 /* === Glassy Sticky Header with Dropdown === */
 .site-header {
