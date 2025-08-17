@@ -1,3 +1,26 @@
+// === Header Nav Toggle ===
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    navToggle.classList.toggle('active', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.classList.toggle('nav-open', isOpen);
+  });
+
+  // Close when clicking outside (mobile)
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !navToggle.contains(e.target) && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      navToggle.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }
+  });
+}
+
 // ✅ Contact form submission handler
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
