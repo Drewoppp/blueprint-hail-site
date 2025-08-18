@@ -125,6 +125,28 @@
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    const navLinks = document.querySelectorAll(".nav-link, .dropdown-link");
+
+    // Toggle menu open/close
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", !expanded);
+      nav.classList.toggle("open");
+    });
+
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navToggle.setAttribute("aria-expanded", "false");
+        nav.classList.remove("open");
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
