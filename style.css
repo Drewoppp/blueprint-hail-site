@@ -412,7 +412,7 @@ nav ul li a {
 }
 
 .review-section h2 {
-  margin-bottom: 10px;   /* was 30px */
+  margin-bottom: 5px;   /* was 30px */
 }
 
 /* Some widgets add extra margin on their container — kill it */
