@@ -162,3 +162,38 @@
     min-width: 0;
   }
 }
+
+/* Hide nav on mobile */
+.nav {
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Example: on desktop, always show nav */
+@media (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
