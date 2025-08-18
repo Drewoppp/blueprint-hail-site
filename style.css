@@ -404,18 +404,23 @@ nav ul li a {
 .accordion-header.active .icon {
   transform: rotate(45deg); /* turns + into an x */
 }
-/* google reviews */
+
+/* --- Tighter spacing for Customer Reviews, google reviews --- */
 .review-section {
-  padding: 60px 20px;
-  background-color: #f8f8f8;
-  text-align: center;
+  padding-top: 28px;     /* was 60px */
+  padding-bottom: 40px;  /* keep some room below */
 }
 
 .review-section h2 {
-  font-size: 28px;
-  color: #003366;
-  margin-bottom: 30px;
+  margin-bottom: 10px;   /* was 30px */
 }
+
+/* Some widgets add extra margin on their container — kill it */
+.review-section .elfsight-app,
+.review-section [class*="eapps-"] {
+  margin-top: 0 !important;
+}
+
 
 
 
