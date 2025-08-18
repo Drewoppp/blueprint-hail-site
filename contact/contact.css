@@ -12,11 +12,14 @@
 /* Grid */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr; /* map a bit wider */
-  gap: 0.75rem;                     /* reduce spacing */
+  grid-template-columns: 1fr 2fr; /* map takes 2x the width of contact info */
+  gap: 1rem;                      /* spacing between columns */
 }
+
 @media (max-width: 980px) {
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
 }
 
 /* Cards */
