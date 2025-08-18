@@ -409,9 +409,13 @@ nav ul li a {
 .review-section {
   padding-top: 28px;     /* was 60px */
   padding-bottom: 40px;  /* keep some room below */
+  background-color: #f8f8f8; 
+  text-align: center;
 }
 
 .review-section h2 {
+  font-size: 28px; 
+  color: #003366;
   margin-bottom: 5px;   /* was 30px */
 }
 
