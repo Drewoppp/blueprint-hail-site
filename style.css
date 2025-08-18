@@ -415,10 +415,18 @@ nav ul li a {
   margin-bottom: 5px;   /* was 30px */
 }
 
-/* Some widgets add extra margin on their container — kill it */
+/* Kill extra gap above the reviews widget */
 .review-section .elfsight-app,
-.review-section [class*="eapps-"] {
+.review-section [class*="eapps-"],
+.review-section iframe {
   margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Also shrink any invisible spacing inside the container */
+.review-section .elfsight-app > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 
