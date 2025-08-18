@@ -986,4 +986,6 @@ footer {
   }
 }
 
-
+.review-section .elfsight-app, 
+.review-section [class*="eapps-"], 
+.review-section iframe { margin-top: 0 !important; padding-top: 0 !important; }
