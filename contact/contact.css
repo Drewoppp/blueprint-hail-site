@@ -143,3 +143,22 @@
   background-color: #0056b3; /* Darker blue */
   transform: translateY(-2px);
 }
+
+/* Desktop-only adjustments */
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: minmax(320px, 1fr) minmax(600px, 2fr); /* wider map column */
+    gap: 1.25rem;
+  }
+
+  .contact-grid .card {
+    width: 100%;
+    max-width: none; /* let cards fill their grid space */
+    margin: 0;
+  }
+
+  .contact-left,
+  .contact-right {
+    min-width: 0;
+  }
+}
