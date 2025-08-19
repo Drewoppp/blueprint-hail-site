@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services - Blue Print Hail Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global + shared FAQ styling -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/faq/faq.css" />
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="/services/services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="https://blueprinthailteam.com" aria-label="Blue Print Hail Team home">
+      <img src="/images/wfulllogo2.png" alt="BPHT Logo" class="logo-image" />
+    </a>
+
+    <!-- Hamburger -->
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <!-- Slide-in Nav -->
+    <nav class="nav" aria-label="Main">
+      <!-- Mobile close “X” inside panel -->
+      <button class="nav-close" aria-label="Close menu">&times;</button>
+
+      <ul class="nav-list">
+        <li class="nav-item has-dropdown">
+          <a href="/about/" class="nav-link">ABOUT US</a>
+          <div class="dropdown">
+            <a href="/faq/" class="dropdown-link">Our Mission</a>
+            <a href="/services/" class="dropdown-link">SERVICES</a>
+            <a href="/contact/" class="dropdown-link">CONTACT</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="/faq/" class="nav-link">Our Mission</a></li>
+        <li class="nav-item"><a href="/services/" class="nav-link">SERVICES</a></li>
+        <li class="nav-item"><a href="/contact/" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Content (reuse faq-page spacing) -->
+  <main class="page-content faq-page services-page">
+    <h1>Services</h1>
+
+    <section class="svc-card">
+      <h2>Hail Damage Repair</h2>
+      <p>
+        When a hailstorm hits, the damage it leaves behind on your vehicle is often more severe than it first appears.
+        What may look like a few small dents on the surface can actually add up to hundreds—even thousands—of impact damage
+        that reduce your vehicle’s value.
+      </p>
+      <p>
+        Using advanced <strong>Paintless Dent Repair (PDR)</strong> techniques, we restore your vehicle to its pre-storm
+        condition without the need for paint or body fillers. Our process not only saves you time and money but also
+        ensures your factory finish.
+      </p>
+    </section>
+
+    <section class="svc-card">
+      <h2>Dents &amp; Creases</h2>
+      <p>
+        Everyday dents, dings, and door creases can have the same effect on your car’s appearance and resale value as hail damage.
+        Even minor imperfections can stand out and take away from the overall look of your vehicle.
+      </p>
+      <p>
+        Our technicians don’t just specialize in hail damage repair—we’re also highly skilled in repairing dents and creases
+        of all sizes. Using advanced <strong>PDR</strong> methods, we restore panels with perfection and precision, ensuring your
+        vehicle looks as if the damage never happened.
+      </p>
+      <p>
+        Whether it’s a sharp door crease, a parking lot ding, or a deep dent, you can trust our team to bring your vehicle back
+        to showroom quality.
+      </p>
+    </section>
+
+    <section class="svc-card svc-list">
+      <h2>When you choose us, you can count on:</h2>
+      <ul>
+        <li>Factory-quality repairs that protect your car’s value</li>
+        <li>Fast turnaround times so you can get back on the road quickly</li>
+        <li>Insurance assistance to simplify the claims process</li>
+        <li>Friendly service from a team that truly enjoys what we do</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>AREA OF SERVICE</h4>
+        <p>Murfreesboro TN and Surrounding Areas</p>
+      </div>
+      <div class="footer-column">
+        <h4>HOURS</h4>
+        <p>Mon–Fri: 9:00 AM – 5:00 PM</p>
+        <p>Sat: Closed</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div class="footer-column">
+        <h4>CONTACT</h4>
+        <p><a href="mailto:blueprinthailteam@gmail.com">blueprinthailteam@gmail.com</a></p>
+        <p><a href="tel:6158095270">(615) 809-5270</a></p>
+      </div>
+      <div class="footer-column">
+        <h4>SOCIAL</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/people/Blueprint-Hail-Team/100042714476335/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/blueprinthailteam/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-logo">
+      <img src="/images/wfulllogo2.png" alt="Blue Print Hail Team" />
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; Blue Print Hail Team | 2025 All Rights Reserved |
+        Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color:#fff;text-decoration:underline;">_chayavon</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Page-only JS: hamburger open/close + “X” -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navToggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav");
+      const navClose = document.querySelector(".nav-close");
+      const links = document.querySelectorAll(".nav-link, .dropdown-link");
+
+      function openNav() {
+        nav.classList.add("open");
+        navToggle.classList.add("active");
+        navToggle.setAttribute("aria-expanded", "true");
+      }
+      function closeNav() {
+        nav.classList.remove("open");
+        navToggle.classList.remove("active");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+
+      if (navToggle && nav) {
+        navToggle.addEventListener("click", () => {
+          nav.classList.contains("open") ? closeNav() : openNav();
+        });
+      }
+      if (navClose) {
+        navClose.addEventListener("click", closeNav);
+      }
+      links.forEach(a => a.addEventListener("click", closeNav));
+
+      // Close when clicking outside (mobile)
+      document.addEventListener("click", (e) => {
+        if (nav.classList.contains("open")) {
+          const clickInside = nav.contains(e.target) || navToggle.contains(e.target);
+          if (!clickInside) closeNav();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
