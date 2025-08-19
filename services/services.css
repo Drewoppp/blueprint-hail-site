@@ -1,0 +1,92 @@
+/* Services page uses the same spacing vibe as faq.css */
+.services-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card look for each service block */
+.svc-card {
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  max-width: 900px;
+}
+.svc-card h2 {
+  margin-bottom: .6rem;
+  font-size: 1.4rem;
+  color: #111;
+}
+.svc-card p, .svc-card li {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Bullet list section */
+.svc-list ul {
+  list-style: none;
+  margin: .5rem 0 0;
+  padding: 0;
+}
+.svc-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin: .35rem 0;
+}
+.svc-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1d4e89; /* brand-ish accent */
+  font-weight: 900;
+}
+
+/* MOBILE NAV: Add the “X” button inside the slide-in panel */
+@media (max-width: 900px) {
+  .nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100dvh;
+    width: min(84vw, 360px);
+    background: rgba(15,15,15,.94);
+    transform: translateX(100%);
+    transition: transform .25s ease;
+    padding: 72px 16px 16px; /* top padding for space below header */
+    z-index: 1000;
+    backdrop-filter: blur(16px);
+  }
+  .nav.open { transform: translateX(0); }
+
+  /* “X” button inside panel */
+  .nav-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  .nav-close:hover { background: rgba(255,255,255,.22); }
+
+  /* Keep your bar-to-X animation on the hamburger too */
+  .nav-toggle.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-toggle.active .bar:nth-child(2) { opacity: 0; }
+  .nav-toggle.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+}
+
+/* DESKTOP: always show nav, hide the in-panel X */
+@media (min-width: 901px) {
+  .nav { transform: none !important; position: static; height: auto; width: auto; padding: 0; backdrop-filter: none; }
+  .nav-close { display: none; }
+}
