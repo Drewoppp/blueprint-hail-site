@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FAQ - Blue Print Hail Team</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="faq.css">
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Gallery - Blue Print Hail Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global site CSS -->
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="/gallery/gallery.css" />
 </head>
 <body>
-  <!-- ✅ Header -->
+  <!-- Header (same structure as your other pages) -->
   <header class="site-header">
     <a class="brand" href="https://blueprinthailteam.com" aria-label="Blue Print Hail Team home">
-      <img src="images/wfulllogo2.png" alt="BPHT Logo" class="logo-image">
+      <img src="/images/wfulllogo2.png" alt="BPHT Logo" class="logo-image" />
     </a>
 
     <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
 
     <nav class="nav" aria-label="Main">
@@ -26,70 +25,70 @@
         <li class="nav-item has-dropdown">
           <a href="/about/" class="nav-link">ABOUT US</a>
           <div class="dropdown">
-            <a href="/about/" class="dropdown-link">ABOUT US</a>
-            <a href="/team/" class="dropdown-link">THE TEAM</a>
+            <a href="/faq/" class="dropdown-link">Our Mission</a>
+            <a href="/services/" class="dropdown-link">SERVICES</a>
+            <a href="/contact/" class="dropdown-link">CONTACT</a>
           </div>
         </li>
-        <li class="nav-item"><a href="/faq/" class="nav-link">FAQ</a></li>
-        <li class="nav-item"><a href="https://www.blueprinthailteam.com/#services" class="nav-link">SERVICES</a></li>
+        <li class="nav-item"><a href="/faq/" class="nav-link">Our Mission</a></li>
+        <li class="nav-item"><a href="/services/" class="nav-link">SERVICES</a></li>
         <li class="nav-item"><a href="/contact/" class="nav-link">CONTACT</a></li>
       </ul>
     </nav>
   </header>
-<main class="gallery-page">
-  <h1>Our Gallery</h1>
 
-  <div class="gallery-grid">
-    <img src="images/img1.jpg" alt="Gallery Image 1">
-    <img src="images/img2.jpg" alt="Gallery Image 2">
-    <img src="images/img3.jpg" alt="Gallery Image 3">
-    <img src="images/img4.jpg" alt="Gallery Image 4">
-    <img src="images/img5.jpg" alt="Gallery Image 5">
-    <img src="images/img6.jpg" alt="Gallery Image 6">
-    <img src="images/img7.jpg" alt="Gallery Image 7">
-    <img src="images/img8.jpg" alt="Gallery Image 8">
-    <img src="images/img9.jpg" alt="Gallery Image 9">
-    <img src="images/img10.jpg" alt="Gallery Image 10">
-    <img src="images/img11.jpg" alt="Gallery Image 11">
-    <img src="images/img12.jpg" alt="Gallery Image 12">
-    <img src="images/img13.jpg" alt="Gallery Image 13">
-    <img src="images/img14.jpg" alt="Gallery Image 14">
-    <img src="images/img15.jpg" alt="Gallery Image 15">
-    <img src="images/img16.jpg" alt="Gallery Image 16">
-    <img src="images/img17.jpg" alt="Gallery Image 17">
-    <img src="images/img18.jpg" alt="Gallery Image 18">
-  </div>
+  <main class="gallery-page">
+    <h1>Our Gallery</h1>
 
-  <!-- Lightbox overlay (same as before) -->
-  <div class="lightbox" aria-hidden="true">
-    <button class="lb-close" aria-label="Close">&times;</button>
-    <button class="lb-prev" aria-label="Previous">&#10094;</button>
-    <img class="lb-img" alt="">
-    <button class="lb-next" aria-label="Next">&#10095;</button>
-  </div>
-</main>
+    <div class="gallery-grid">
+      <img src="/images/img1.jpg"  alt="Gallery Image 1">
+      <img src="/images/img2.jpg"  alt="Gallery Image 2">
+      <img src="/images/img3.jpg"  alt="Gallery Image 3">
+      <img src="/images/img4.jpg"  alt="Gallery Image 4">
+      <img src="/images/img5.jpg"  alt="Gallery Image 5">
+      <img src="/images/img6.jpg"  alt="Gallery Image 6">
+      <img src="/images/img7.jpg"  alt="Gallery Image 7">
+      <img src="/images/img8.jpg"  alt="Gallery Image 8">
+      <img src="/images/img9.jpg"  alt="Gallery Image 9">
+      <img src="/images/img10.jpg" alt="Gallery Image 10">
+      <img src="/images/img11.jpg" alt="Gallery Image 11">
+      <img src="/images/img12.jpg" alt="Gallery Image 12">
+      <img src="/images/img13.jpg" alt="Gallery Image 13">
+      <img src="/images/img14.jpg" alt="Gallery Image 14">
+      <img src="/images/img15.jpg" alt="Gallery Image 15">
+      <img src="/images/img16.jpg" alt="Gallery Image 16">
+      <img src="/images/img17.jpg" alt="Gallery Image 17">
+      <img src="/images/img18.jpg" alt="Gallery Image 18">
+    </div>
 
-  <!-- ✅ Footer -->
+    <!-- Lightbox overlay -->
+    <div class="lightbox" aria-hidden="true">
+      <button class="lb-close" aria-label="Close">&times;</button>
+      <button class="lb-prev" aria-label="Previous">&#10094;</button>
+      <img class="lb-img" alt="">
+      <div class="lb-caption" aria-live="polite"></div>
+      <button class="lb-next" aria-label="Next">&#10095;</button>
+    </div>
+  </main>
+
+  <!-- Footer (same as other pages) -->
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-column">
         <h4>AREA OF SERVICE</h4>
         <p>Murfreesboro TN and Surrounding Areas</p>
       </div>
-
       <div class="footer-column">
         <h4>HOURS</h4>
         <p>Mon–Fri: 9:00 AM – 5:00 PM</p>
         <p>Sat: Closed</p>
         <p>Sun: Closed</p>
       </div>
-    
       <div class="footer-column">
         <h4>CONTACT</h4>
         <p><a href="mailto:blueprinthailteam@gmail.com">blueprinthailteam@gmail.com</a></p>
         <p><a href="tel:6158095270">(615) 809-5270</a></p>
       </div>
-  
       <div class="footer-column">
         <h4>SOCIAL</h4>
         <div class="social-icons">
@@ -99,19 +98,91 @@
         </div>
       </div>
     </div>
-  
+
     <div class="footer-logo">
-      <img src="images/wfulllogo2.png" alt="Blue Print Hail Team">
+      <img src="/images/wfulllogo2.png" alt="Blue Print Hail Team" />
     </div>
-  
+
     <div class="footer-bottom">
       <p>
         &copy; Blue Print Hail Team | 2025 All Rights Reserved |
-        Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color: #fff; text-decoration: underline;">_chayavon</a>
+        Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color:#fff;text-decoration:underline;">_chayavon</a>
       </p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Page JS (lightbox) -->
+  <script>
+    (function () {
+      const thumbs = Array.from(document.querySelectorAll('.gallery-grid img'));
+      const lb = document.querySelector('.lightbox');
+      const lbImg = document.querySelector('.lb-img');
+      const lbCap = document.querySelector('.lb-caption');
+      const prevBtn = document.querySelector('.lb-prev');
+      const nextBtn = document.querySelector('.lb-next');
+      const closeBtn = document.querySelector('.lb-close');
+      let i = 0;
+
+      function openAt(idx) {
+        i = idx;
+        lbImg.src = thumbs[i].src;
+        lbImg.alt = thumbs[i].alt || '';
+        lbCap.textContent = thumbs[i].alt || '';
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+      function next() { i = (i + 1) % thumbs.length; openAt(i); }
+      function prev() { i = (i - 1 + thumbs.length) % thumbs.length; openAt(i); }
+
+      thumbs.forEach((img, idx) => {
+        img.addEventListener('click', () => openAt(idx));
+        img.style.cursor = 'zoom-in';
+      });
+      closeBtn.addEventListener('click', close);
+      nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
+      prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+      // click outside image closes
+      lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+
+      // keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+      });
+
+      // basic touch swipe
+      let startX = 0;
+      lb.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive:true});
+      lb.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+      });
+
+      // Mobile-only hamburger (optional for this page)
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          navToggle.classList.toggle('active', open);
+          navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        document.querySelectorAll('.nav-link,.dropdown-link').forEach(a => {
+          a.addEventListener('click', () => { nav.classList.remove('open'); navToggle.classList.remove('active'); });
+        });
+      }
+    })();
+  </script>
+  <!-- Font Awesome (icons in footer) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </body>
 </html>
