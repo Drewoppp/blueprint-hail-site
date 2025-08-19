@@ -4,23 +4,27 @@
   <meta charset="UTF-8" />
   <title>Gallery - Blue Print Hail Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Global site CSS -->
   <link rel="stylesheet" href="/style.css" />
-  <!-- Page CSS -->
   <link rel="stylesheet" href="/gallery/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Header (same structure as your other pages) -->
+  <!-- Header -->
   <header class="site-header">
-    <a class="brand" href="https://blueprinthailteam.com" aria-label="Blue Print Hail Team home">
+    <a class="brand" href="/" aria-label="Blue Print Hail Team home">
       <img src="/images/wfulllogo2.png" alt="BPHT Logo" class="logo-image" />
     </a>
 
+    <!-- Hamburger -->
     <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
 
+    <!-- Slide-in Nav -->
     <nav class="nav" aria-label="Main">
+      <!-- Mobile close “X” inside panel -->
+      <button class="nav-close" aria-label="Close menu">&times;</button>
+
       <ul class="nav-list">
         <li class="nav-item has-dropdown">
           <a href="/about/" class="nav-link">ABOUT US</a>
@@ -37,41 +41,32 @@
     </nav>
   </header>
 
-  <main class="gallery-page">
+  <!-- Page Content -->
+  <main class="page-content gallery-page">
     <h1>Our Gallery</h1>
-
     <div class="gallery-grid">
-      <img src="/gallery/images/img1.jpg"  alt="Gallery Image 1">
-      <img src="/gallery/images/img2.jpg"  alt="Gallery Image 2">
-      <img src="/gallery/images/img3.jpg"  alt="Gallery Image 3">
-      <img src="/gallery/images/img4.jpg"  alt="Gallery Image 4">
-      <img src="/gallery/images/img5.jpg"  alt="Gallery Image 5">
-      <img src="/gallery/images/img6.jpg"  alt="Gallery Image 6">
-      <img src="/gallery/images/img7.jpg"  alt="Gallery Image 7">
-      <img src="/gallery/images/img8.jpg"  alt="Gallery Image 8">
-      <img src="/gallery/images/img9.jpg"  alt="Gallery Image 9">
-      <img src="/gallery/images/img10.jpg" alt="Gallery Image 10">
-      <img src="/gallery/images/img11.jpg" alt="Gallery Image 11">
-      <img src="/gallery/images/img12.jpg" alt="Gallery Image 12">
-      <img src="/gallery/images/img13.jpg" alt="Gallery Image 13">
-      <img src="/gallery/images/img14.jpg" alt="Gallery Image 14">
-      <img src="/gallery/images/img15.jpg" alt="Gallery Image 15">
-      <img src="/gallery/images/img16.jpg" alt="Gallery Image 16">
-      <img src="/gallery/images/img17.jpg" alt="Gallery Image 17">
-      <img src="/gallery/images/img18.jpg" alt="Gallery Image 18">
-    </div>
-
-    <!-- Lightbox overlay -->
-    <div class="lightbox" aria-hidden="true">
-      <button class="lb-close" aria-label="Close">&times;</button>
-      <button class="lb-prev" aria-label="Previous">&#10094;</button>
-      <img class="lb-img" alt="">
-      <div class="lb-caption" aria-live="polite"></div>
-      <button class="lb-next" aria-label="Next">&#10095;</button>
+      <img src="/gallery/img1.jpg" alt="Gallery Image 1" />
+      <img src="/gallery/img2.jpg" alt="Gallery Image 2" />
+      <img src="/gallery/img3.jpg" alt="Gallery Image 3" />
+      <img src="/gallery/img4.jpg" alt="Gallery Image 4" />
+      <img src="/gallery/img5.jpg" alt="Gallery Image 5" />
+      <img src="/gallery/img6.jpg" alt="Gallery Image 6" />
+      <img src="/gallery/img7.jpg" alt="Gallery Image 7" />
+      <img src="/gallery/img8.jpg" alt="Gallery Image 8" />
+      <img src="/gallery/img9.jpg" alt="Gallery Image 9" />
+      <img src="/gallery/img10.jpg" alt="Gallery Image 10" />
+      <img src="/gallery/img11.jpg" alt="Gallery Image 11" />
+      <img src="/gallery/img12.jpg" alt="Gallery Image 12" />
+      <img src="/gallery/img13.jpg" alt="Gallery Image 13" />
+      <img src="/gallery/img14.jpg" alt="Gallery Image 14" />
+      <img src="/gallery/img15.jpg" alt="Gallery Image 15" />
+      <img src="/gallery/img16.jpg" alt="Gallery Image 16" />
+      <img src="/gallery/img17.jpg" alt="Gallery Image 17" />
+      <img src="/gallery/img18.jpg" alt="Gallery Image 18" />
     </div>
   </main>
 
-  <!-- Footer (same as other pages) -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-column">
@@ -94,95 +89,54 @@
         <div class="social-icons">
           <a href="https://www.facebook.com/people/Blueprint-Hail-Team/100042714476335/" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/blueprinthailteam/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
         </div>
       </div>
     </div>
-
     <div class="footer-logo">
       <img src="/images/wfulllogo2.png" alt="Blue Print Hail Team" />
     </div>
-
     <div class="footer-bottom">
-      <p>
-        &copy; Blue Print Hail Team | 2025 All Rights Reserved |
-        Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color:#fff;text-decoration:underline;">_chayavon</a>
-      </p>
+      <p>&copy; Blue Print Hail Team | 2025 All Rights Reserved | Made by <a href="https://instagram.com/_chayavon" target="_blank" style="color:#fff;text-decoration:underline;">_chayavon</a></p>
     </div>
   </footer>
 
-  <!-- Page JS (lightbox) -->
+  <!-- Page-only JS -->
   <script>
-    (function () {
-      const thumbs = Array.from(document.querySelectorAll('.gallery-grid img'));
-      const lb = document.querySelector('.lightbox');
-      const lbImg = document.querySelector('.lb-img');
-      const lbCap = document.querySelector('.lb-caption');
-      const prevBtn = document.querySelector('.lb-prev');
-      const nextBtn = document.querySelector('.lb-next');
-      const closeBtn = document.querySelector('.lb-close');
-      let i = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+      const navToggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav");
+      const navClose = document.querySelector(".nav-close");
+      const links = document.querySelectorAll(".nav-link, .dropdown-link");
 
-      function openAt(idx) {
-        i = idx;
-        lbImg.src = thumbs[i].src;
-        lbImg.alt = thumbs[i].alt || '';
-        lbCap.textContent = thumbs[i].alt || '';
-        lb.classList.add('open');
-        lb.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
+      function openNav() {
+        nav.classList.add("open");
+        navToggle.classList.add("active");
+        navToggle.setAttribute("aria-expanded", "true");
       }
-      function close() {
-        lb.classList.remove('open');
-        lb.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
+      function closeNav() {
+        nav.classList.remove("open");
+        navToggle.classList.remove("active");
+        navToggle.setAttribute("aria-expanded", "false");
       }
-      function next() { i = (i + 1) % thumbs.length; openAt(i); }
-      function prev() { i = (i - 1 + thumbs.length) % thumbs.length; openAt(i); }
 
-      thumbs.forEach((img, idx) => {
-        img.addEventListener('click', () => openAt(idx));
-        img.style.cursor = 'zoom-in';
-      });
-      closeBtn.addEventListener('click', close);
-      nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
-      prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
-
-      // click outside image closes
-      lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
-
-      // keyboard support
-      document.addEventListener('keydown', (e) => {
-        if (!lb.classList.contains('open')) return;
-        if (e.key === 'Escape') close();
-        if (e.key === 'ArrowRight') next();
-        if (e.key === 'ArrowLeft') prev();
-      });
-
-      // basic touch swipe
-      let startX = 0;
-      lb.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive:true});
-      lb.addEventListener('touchend', (e) => {
-        const dx = e.changedTouches[0].clientX - startX;
-        if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
-      });
-
-      // Mobile-only hamburger (optional for this page)
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.nav');
       if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-          const open = nav.classList.toggle('open');
-          navToggle.classList.toggle('active', open);
-          navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-        document.querySelectorAll('.nav-link,.dropdown-link').forEach(a => {
-          a.addEventListener('click', () => { nav.classList.remove('open'); navToggle.classList.remove('active'); });
+        navToggle.addEventListener("click", () => {
+          nav.classList.contains("open") ? closeNav() : openNav();
         });
       }
-    })();
+      if (navClose) {
+        navClose.addEventListener("click", closeNav);
+      }
+      links.forEach(a => a.addEventListener("click", closeNav));
+
+      document.addEventListener("click", (e) => {
+        if (nav.classList.contains("open")) {
+          const clickInside = nav.contains(e.target) || navToggle.contains(e.target);
+          if (!clickInside) closeNav();
+        }
+      });
+    });
   </script>
-  <!-- Font Awesome (icons in footer) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </body>
 </html>
